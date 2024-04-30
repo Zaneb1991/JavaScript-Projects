@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Project2_Functions</title>
+        <title>JavaScript Functions</title>
         <meta charset="UTF-8">
-        <script src="JS/main.js"></script>
-        <p id="Concatenate"></p>
     </head>
 
     <body>
-        <!--This is a paragraph calling a JavaScript Function-->
-        <p id = "Concatenate" onclick = "myFunction()">Click Here!</p>
+        
+        <p> calculation and return result when a function is called 2 * 8</p>
+
+        <p id="demo"></p>
+
+        <script>
+            function myFunction(p1, p2) {
+                return p1 * p2;
+            }
+
+            let result = myFunction(2, 8);
+            document.getElementById("demo").innerHTML = result;
+        </script>
+
     </body>
 </html>
