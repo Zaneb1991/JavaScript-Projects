@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Continue Challenge</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <!--Continue Challenge-->
+        <h2>Continue Challenge</h2>
+        <p>This is a loop that will skip number 5 and continue statement.</p>
+     
+        <p id="Continue"></p>
+     
+        <script>
+            let text = "";
+            for (let i = 0; i < 7; i++) {
+                if (i === 5) { continue; }
+                text += "This number is " + i + "<br>";
+            }
+            document.getElementById("Continue").innerHTML = text;
+        </script>
+    </body>
+</html>
