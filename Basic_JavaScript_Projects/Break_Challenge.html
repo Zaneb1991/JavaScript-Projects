@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Break and Continue Challenge</title>
+        <meta charset="UTF-8">
+    </head>
+
+    <body>
+        <!--Break Challenge-->
+        <h2>Break Challenge</h2>
+        <p>This is a loop with a break statement.</p>
+
+        <p id="Break"></p>
+
+        <script>
+            let text = "";
+            for (let i = 0; i < 7; i++) {
+                if (i === 5) { break; }
+                text += "This number is " + i + "<br>";
+            }
+            document.getElementById("Break").innerHTML = text;
+        </script>
+                
+    </body>
+</html>
