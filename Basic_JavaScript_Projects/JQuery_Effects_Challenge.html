@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery FadeOut Effect Example</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#fadeButton").click(function(){
+                    $("#content").fadeOut();
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <button id="fadeButton">Fade Out</button>
+        <div id="content" style="width:200px;height:100px;background-color:lightblue;">
+            This is some content.
+        </div>
+    </body>
+</html>
